@@ -19,6 +19,9 @@ namespace KredeSoundboardGame
     {
         NAudio.Wave.WaveOut sourceStream;
         NAudio.Wave.DirectSoundOut output;
+        List<WaveOut> WaveList = new List<WaveOut>();
+        List<DirectSoundOut> OutList = new List<DirectSoundOut>();
+
         public Form1()
         {
             InitializeComponent();
@@ -50,6 +53,7 @@ namespace KredeSoundboardGame
                 output = new NAudio.Wave.DirectSoundOut();
                 output.Init(new NAudio.Wave.WaveChannel32(wave));
                 output.Play();
+                OutList.Add(output);
             }
             
             if (DeviceList.SelectedItems.Count == 0) return;
@@ -59,21 +63,22 @@ namespace KredeSoundboardGame
 
             sourceStream.Init(wave);
             sourceStream.Play();
+            WaveList.Add(sourceStream);
         }
 
         private void STOP_Click(object sender, EventArgs e)
         {
-            if (sourceStream != null)
+            foreach (WaveOut item in WaveList)
             {
-                sourceStream.Dispose();
-                sourceStream = null;
-            }
-            if (output != null)
-            {
-                output.Dispose();
-                output = null;
+                item.Dispose();
             }
 
+            foreach (DirectSoundOut item in OutList)
+            {
+                item.Dispose();
+            }
+            WaveList.Clear();
+            OutList.Clear();
         }
     }
 }

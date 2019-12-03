@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KredeSoundboardGame.exe" size="12760">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KredeSoundboardGame.exe" size="13272">
       <assemblyIdentity name="KredeSoundboardGame" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>P5u4Y/6Ef8Q26ZiSLnRaenqu1RqHspWxrUAnnsH+Eb4=</dsig:DigestValue>
+        <dsig:DigestValue>TwDGzONSburwWMPxgpgWf2N7u8q6cmSyAm891RjgOs8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -84,6 +84,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>VIO16WdFY7qzkYzjZ78gb5ELIzhvGIym6vHOI+FZNh4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ElfPractice.wav" size="1488462">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2qNK+BUjFi6aQt140tn00z3F3sAbz7qB/aoPrZ7hZMc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="KredeSoundboardGame.exe.config" size="189">
