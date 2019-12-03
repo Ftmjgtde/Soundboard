@@ -32,7 +32,7 @@
             this.Chernobog = new System.Windows.Forms.Button();
             this.Wham = new System.Windows.Forms.Button();
             this.OOHHH = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.ElfPractice = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -89,14 +89,16 @@
             this.OOHHH.UseVisualStyleBackColor = true;
             this.OOHHH.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button5
+            // ElfPractice
             // 
-            this.button5.Location = new System.Drawing.Point(8, 40);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.ElfPractice.Location = new System.Drawing.Point(8, 40);
+            this.ElfPractice.Name = "ElfPractice";
+            this.ElfPractice.Size = new System.Drawing.Size(75, 23);
+            this.ElfPractice.TabIndex = 4;
+            this.ElfPractice.Tag = "wav";
+            this.ElfPractice.Text = "Elf Practice";
+            this.ElfPractice.UseVisualStyleBackColor = true;
+            this.ElfPractice.Click += new System.EventHandler(this.button1_Click);
             // 
             // button6
             // 
@@ -206,7 +208,7 @@
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.ElfPractice);
             this.Controls.Add(this.OOHHH);
             this.Controls.Add(this.Wham);
             this.Controls.Add(this.Chernobog);
@@ -224,7 +226,7 @@
         private System.Windows.Forms.Button Chernobog;
         private System.Windows.Forms.Button Wham;
         private System.Windows.Forms.Button OOHHH;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button ElfPractice;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
